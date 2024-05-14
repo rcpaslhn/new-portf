@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+
+ul li {
+list-style-type:none;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.yazi-tipi{
+    font-size: 60px;
+    font-weight:500;
+    letter-spacing: 1.2;
+
+}
+.butn{
+    width: 120px;
+    height: 60px;
+    color: black;
+    border: 1px solid black;
+    border-radius:30px;
+}
+.butn:hover{
+    color: white;
+    background-color: black;
+
+}
+.butn-1{
+    width: 120px;
+    height: 60px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius:30px;
+
+}
+.butn-1:hover{
+    color: black;
+    background-color: white;
+
+}
+.cizik{
+    width: 200px;
+    height: 5px;
+    background-color: black;
+    text-align: center;
+}
+.borderr{
+    width: 45%;
+    border:2px solid grey;
+    height: 200px;
+    border-radius: 15px;
+}
+.experience{
+    padding: 10px;
+    margin-top: 100px;
+    width: 50%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.projects{
+    padding: 20px 10px;
+    width: 300px;
+    height: auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.contact{
+    width: 400px;
+    height: 80px;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+.active{
+    opacity: .5;
+    
+    transition: ease-out 1.2s;
+    ;
+}
+.menu{
+    display: none;
+    cursor: pointer;
+}
+
+#liste{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   
+}
+.section-1{
+    margin-top: 150px;
+}
+
+@media screen and (max-width:1007px) {
+    
+    #liste{
+        display:none;
+   
+    }
+    .menu{
+        display:block;
+    }
+    .contact{
+        height: auto;
+    }
+}
+
+@media screen and (max-width:1236px) {
+    
+.resim{
+    flex-direction: column;
+}
+.section-1{
+    margin-top: 80px;
+}
+
+.ana-div{
+    margin-top: 100px;
+}
+}
+@media screen and (max-width:570px){
+    .skills{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+ 
+}
+@media screen and (max-width:1180px){
+ .projeler{
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+ }
+ .projects{
+    margin-top: 40px;
+   
+ }
+}
+@media screen and (max-width:480px){
+    .yazi-tipi{
+        text-align: center;
+    }
+}
